@@ -1,0 +1,7 @@
+def is_fibonacci(num):
+    a, b = 0, 1
+    while a < num: a, b = b, a + b
+    return num == a
+
+n = int(input("Informe um número: "))
+print(f"{n} {'pertence' if is_fibonacci(n) else 'não pertence'} à sequência de Fibonacci.")
