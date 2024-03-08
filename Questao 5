@@ -1,0 +1,9 @@
+def inverter_string(string):
+    inverted_string = ''
+    for char in string:
+        inverted_string = char + inverted_string
+    return inverted_string
+
+E = input("Digite uma palavra ou frase: ")
+I = inverter_string(entrada)
+print("Palavra ou frase invertida:", I)
